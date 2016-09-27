@@ -1,0 +1,38 @@
+Performing Test Cases, Results below:
+
+Testing Positive Scenarios...
+
+"./portsetter.cpp.o "...Passed!
+"./portsetter.cpp.o -h"...Passed!
+"./portsetter.cpp.o --help"...Passed!
+"./portsetter.cpp.o -?"...Passed!
+"./portsetter.cpp.o -v"...Passed!
+"./portsetter.cpp.o --version"...Passed!
+"./portsetter.cpp.o -!"...Passed!
+"./portsetter.cpp.o --about"...Passed!
+"./portsetter.cpp.o -p 4040"...Passed!
+"./portsetter.cpp.o --port 4040"...Passed!
+"./portsetter.cpp.o -p -e 4040"...Passed!
+"./portsetter.cpp.o --port -e 4040"...Passed!
+
+Testing Negative Scenarios...
+
+"./portsetter.cpp.o help"...Passed!
+"./portsetter.cpp.o -help"...Passed!
+"./portsetter.cpp.o --h"...Passed!
+"./portsetter.cpp.o -hs"...Passed!
+"./portsetter.cpp.o -p --port 9"...Passed!
+"./portsetter.cpp.o -p 77 33"...Passed!
+"./portsetter.cpp.o -p -21"...Passed!
+"./portsetter.cpp.o -p 0"...Passed!
+"./portsetter.cpp.o --port"...Passed!
+"./portsetter.cpp.o -p 90642"...Passed!
+"./portsetter.cpp.o -x 45321"...Passed!
+"./portsetter.cpp.o -P 714"...Passed!
+"./portsetter.cpp.o -p -e hello"...Passed!
+"./portsetter.cpp.o -p -e 80000"...Passed!
+"./portsetter.cpp.o -v 8080"...Passed!
+"./portsetter.cpp.o -! 60"...Passed!
+"./portsetter.cpp.o -e"...Passed!
+"./portsetter.cpp.o ?"...Passed!
+"./portsetter.cpp.o --about hi"...Passed!

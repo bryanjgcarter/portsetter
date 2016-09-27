@@ -1,0 +1,7 @@
+Too many arguments error, here is the usage page for more information: 
+Not enough parameters, here is the usage page for more information: 
+Port number not valid please have: 0 < port < 65000
+Environmental Variable "PORT" is not set, see readme for instructions
+Incorrect flag received, lets refresh your memory with a quick look at the usage page:
+Listening on port 
+The version number of this project is v

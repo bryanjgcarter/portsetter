@@ -1,0 +1,13 @@
+=======================================================================================
+Uso: ./portsetter.cpp.o [option] <numero de puerto>
+Optiones: *¡Atencion todas las letras son pequenos!*
+-h, --help, ?                       Muestra información de ayuda, que se utiliza sin 
+                                    ningún otro argumento
+-!, --about                         Imprime información autores
+-v, --version                       Imprime numero de version
+-e <PORT>                           PORT se establece como una variable ambiental, 
+                                    si no es así, vea "readme.md" por instrucciones
+-p, --port <numero de puerto>       Establecer el número de puerto, ya sea usando lo  
+                                    siguiente "-p" o "--port" por el número de puerto 
+                                    que desea establecer.
+========================================================================================

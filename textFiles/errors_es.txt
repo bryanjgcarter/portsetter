@@ -1,0 +1,7 @@
+Demasiados argumentos de error, aquí está la página de uso para más información:
+No hay suficientes parámetros, aquí está la página de uso para más información:
+número de puerto no válido favor tiene: 0 <puerto <65000
+Variable ambiental "PORT" no está definida, ver Léame para obtener instrucciones
+indicador incorrecto recibido, permite refrescar la memoria con un rápido vistazo a la página de uso:
+Escuchando en el puerto
+El número de versión de este proyecto es v
