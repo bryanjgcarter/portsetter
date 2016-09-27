@@ -5,8 +5,8 @@
 ## Running simple program ##
 
 1. run object file with paramaters like this:
-    * "./portsetter.cpp.o [option] <port number>"
-    * i.e. "./portsetter.cpp.o --port 8080"
+    * `./portsetter.cpp.o [option] <port number>`
+    * i.e. `./portsetter.cpp.o --port 8080`
         * will output - "listening on port 8080"
 
 **NOTICE:**
@@ -35,10 +35,12 @@ if this is not an issue for you, continue to type: `./portsetter.cpp.o`
 * this sets the language to spanish.
 * valid languages are english and spanish
 * environmental variables to use: 
+```
     * LANGUAGE
     * LC_ALL
     * LC_MESSAGES
     * LANG
+```
 * set one of these to the language you want 
 
 ## Running Pre-defined Tests ##
