@@ -55,7 +55,7 @@ int main(int argc, char* args[]) {
     if (argc == 1) {
         usage(lang);
         return 0;
-    } else if (argc > 3 && portOrEnv != "-e") { 
+    } else if (argc > 3 && portOrEnv != "-e" && portOrEnv != "--environment") { // added "|| portOrEnv != "--environment"" 
         cout << "\n" << languageVector[TWO] << endl;
         usage(lang);
         return 2;
@@ -65,7 +65,7 @@ int main(int argc, char* args[]) {
     if (argc >= 2) flag = args[1];
     
     /* Check for environmental variable PORT and do with it what is required */
-    if (portOrEnv == "-e" && (flag == "-p" || flag == "--port")) {
+    if ((portOrEnv == "-e" || portOrEnv == "--environment") && (flag == "-p" || flag == "--port")) { // added "|| portOrEnv == "--environment""
         if (getenv("PORT") == "" || getenv("PORT") == nullptr) {
             cout << "\n" << languageVector[NINE] << endl;
             usage(lang);
@@ -151,7 +151,10 @@ string language() {
     envVarLang.push_back("LANG");
     
     for (int i = 0; i < envVarLang.size(); i++) {
-        string envLang = getenv(envVarLang[i].c_str());
+        char* envLangPtr;                                       // i added to fix a compile error
+        string envLang = "";                                    // i added to fix a compile error
+        envLangPtr = getenv(envVarLang[i].c_str());             // i added to fix a compile error
+        if (envLangPtr != NULL) envLang = envLangPtr;           // i added to fix a compile error
         /* Check ignored values */
         if (envLang != "" && envLang != "C" && envLang != "C.UTF-8" && envLang.size() > 0) {
             /* get the first 2 letters for language */
