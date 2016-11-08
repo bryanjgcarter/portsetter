@@ -5,7 +5,7 @@ Options: *Notice all letters are lower case!*
                                     other arguments
 -!, --about                         Prints authors information
 -v, --version                       Prints the version
--e <PORT>                           PORT is set as an environmental variable,
+-e, --environment <PORT>            PORT is set as an environmental variable,
                                     if it is not, see "readme.md" on instructions
 -p, --port <port number>            Set the port number, using either -p
                                     or --port following by the port number
