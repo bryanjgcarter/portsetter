@@ -66,7 +66,7 @@ int main(int argc, char* args[]) {
     
     /* Check for environmental variable PORT and do with it what is required */
     if (portOrEnv == "-e" && (flag == "-p" || flag == "--port")) {
-        if (getenv("PORT") == "" || getenv("PORT") == nullptr) {
+        if (strcmp(getenv("PORT"), "") == 0 || getenv("PORT") == nullptr) {
             cout << "\n" << languageVector[NINE] << endl;
             usage(lang);
             return 9;
@@ -147,7 +147,6 @@ string language() {
     vector<string> envVarLang;
     envVarLang.push_back("LANGUAGE");
     envVarLang.push_back("LC_ALL");
-    envVarLang.push_back("LC_MESSAGES");
     envVarLang.push_back("LANG");
     
     for (int i = 0; i < envVarLang.size(); i++) {
@@ -165,6 +164,7 @@ string language() {
             return "en";
         }
     }
+    return "en";
 }
 
 void languageMessages(vector<string>& languageVector, string lang){
