@@ -56,4 +56,4 @@ To run the tests on Portsetter:
 ## Changes made for CO5 ##
 New envirmonent variable --environment has been added to act the same as -e
 * updated text files and added test cases for new variable
-Also added some code to fix a compile error
+* Also added some code to fix a compile error
