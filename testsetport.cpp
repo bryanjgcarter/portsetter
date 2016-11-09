@@ -37,6 +37,16 @@ int main(int argc, char* args[]) {
     outputFile << test("--port 4040",0);
     outputFile << test("-p -e 4040",0);
     outputFile << test("--port -e 4040",0);
+    outputFile << test("-p -e 3114",0);                 // added line
+    outputFile << test("--port -e 3114",0);             // added line
+    outputFile << test("-p -e",0);                      // added line
+    outputFile << test("--port -e",0);                  // added line
+    outputFile << test("-p --environment",0);           // added line
+    outputFile << test("--port --environment",0);       // added line
+    outputFile << test("-p --environment 3114",0);      // added line
+    outputFile << test("--port --environment 3114",0);  // added line
+    outputFile << test("-p --environment 3116",0);      // added line
+    outputFile << test("--port --environment 3116",0);  // added line
     
     /* Negative Tests */
     outputFile << "\n\nTesting Negative Scenarios..." << endl; 
@@ -59,6 +69,11 @@ int main(int argc, char* args[]) {
     outputFile << test("-e",10);
     outputFile << test("?",10);
     outputFile << test("--about hi",2);
+    outputFile << test("--port --environment 80000",8);     // added line
+    outputFile << test("--port --environment bad",2);       // added line
+    outputFile << test("-p --environment 80000",8);         // added line
+    outputFile << test("-p --environment bad",2);           // added line
+    outputFile << test("--environment",10);                 // added line
     
     outputFile.close();
     

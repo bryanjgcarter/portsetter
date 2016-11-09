@@ -24,8 +24,9 @@ if this is not an issue for you, continue to type: `./portsetter.cpp.o`
 
 1. open command prompt
 2. type `export PORT=NUMBER_YOU_WANT`
-* i.e. : `export PORT=8080`
-* this sets the environmental variable `PORT` to 8080.
+3. i.e. : `export PORT=3114`
+4. this sets the environmental variable `PORT` to 3114.
+* follow the steps above to set BAR to 3116
 
 ## Setting language preference ##
 
@@ -52,3 +53,8 @@ To run the tests on Portsetter:
 * where `path/to/file` is the actual path to the folder where "testsetport.cpp.o" is
 3. type in the command prompt: `./testsetport.cpp.o`
 4. This will print out all test cases where you can see the results
+
+## Changes made for CO5 ##
+New envirmonent variable --environment has been added to act the same as -e
+* updated text files and added test cases for new variable
+* Also added some code to fix a compile error

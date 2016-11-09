@@ -14,6 +14,10 @@ Testing Positive Scenarios...
 "./portsetter.cpp.o --port 4040"...Passed!
 "./portsetter.cpp.o -p -e 4040"...Passed!
 "./portsetter.cpp.o --port -e 4040"...Passed!
+"./portsetter.cpp.o -p --environment"...Passed!
+"./portsetter.cpp.o --port --environment"...Passed!
+"./portsetter.cpp.o -p --environment 4040"...Passed!
+"./portsetter.cpp.o --port --environment 4040"...Passed!
 
 Testing Negative Scenarios...
 
@@ -36,3 +40,6 @@ Testing Negative Scenarios...
 "./portsetter.cpp.o -e"...Passed!
 "./portsetter.cpp.o ?"...Passed!
 "./portsetter.cpp.o --about hi"...Passed!
+"./portsetter.cpp.o -p --environment 80000"...Passed!
+"./portsetter.cpp.o -p --environment bad"...Passed!
+"./portsetter.cpp.o --environment"...Passed!
