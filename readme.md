@@ -24,8 +24,9 @@ if this is not an issue for you, continue to type: `./portsetter.cpp.o`
 
 1. open command prompt
 2. type `export PORT=NUMBER_YOU_WANT`
-* i.e. : `export PORT=8080`
-* this sets the environmental variable `PORT` to 8080.
+3. i.e. : `export PORT=3114`
+4. this sets the environmental variable `PORT` to 3114.
+* follow the steps above to set BAR to 3116
 
 ## Setting language preference ##
 
